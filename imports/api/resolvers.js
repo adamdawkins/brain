@@ -74,7 +74,6 @@ export default {
     },
     anyThought() {
       const thoughtIds = Thoughts.find({}, {fields: { _id:1}}).fetch().map((thought) => thought._id)
-      console.log({thoughtIds});
       const id = Random.choice(thoughtIds);
       
       return Thoughts.findOne(id);

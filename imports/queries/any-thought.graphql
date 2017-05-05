@@ -1,0 +1,13 @@
+query anyThought {
+  thought:anyThought {
+    name
+      children {
+        name
+        id
+      }
+      parents {
+        name
+        id
+      }
+  }
+}
