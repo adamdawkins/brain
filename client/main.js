@@ -8,7 +8,6 @@ import { meteorClientConfig } from 'meteor/apollo';
 import App from '/imports/ui/App.jsx';
 
 const client = new ApolloClient(meteorClientConfig());
-console.log(meteorClientConfig());
  
 Meteor.startup(() => {
   render(
