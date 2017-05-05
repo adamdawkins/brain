@@ -61,7 +61,7 @@ export default {
         id: parentId,
       }, {
         $addToSet: {
-          childIds: parentId,
+          childIds: childId,
         }
       });
 
